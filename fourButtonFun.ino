@@ -38,6 +38,9 @@ int r;
 int g;
 int b;
 int heldTimeRed = 0;
+int heldTimeGreen = 0;
+int heldTimeWhite = 0;
+int heldTimeBlue = 0;
 int sinAmp    = 1;
 float period1 = .1;
 
@@ -91,6 +94,8 @@ void loop(){
   
   // Red Button
   // For sin wave flashing
+  
+  
   int indy = random(chosenColor);
   int red = baseColors[indy][0];
   int green = baseColors[indy][1];
@@ -138,22 +143,88 @@ void loop(){
   Serial.print("\t");
   Serial.print("\n");
   
-  if (r <= 0){ r = 0;}
-  if (r >= 255){ r = 255;}
-  if (g <= 0){g = 0;}
-  if (g >= 255){ g = 255;}
-  if (b <= 0){b = 0;}
-  if (b >= 255){ b = 255;}
+
   
   
   
   
   // If Green Button Gets Pressed
   
+  if (buttonStateGreen == 1) {
+    heldTimeGreen++;}
+  else {
+    heldTimeGreen = 0;
+  }
+  
+  if (heldTimeGreen > 130 ){
+    heldTimeGreen = 2;
+  }
+  //Serial.println(r);
+  
+  //When thresh is exceeded, light up  
+  if (heldTimeGreen > 30 && heldTimeGreen  < 80 ){
+    r = map(255, 0, 255, 0, 255-sinAmp);
+    g = 0;
+    b = 0;
+    r =  r + (sin(period1 *  heldTimeGreen)*(sinAmp/2));
+  }
+
+  else if (heldTimeGreen > 1){
+    r =0 ;
+    g =0 ;
+    b = map(255,   0, 255, 0, 255-sinAmp);
+    b =  b + (sin(period1 *  heldTimeGreen)*(sinAmp/2));
+  }
+  
+    
+
+  if (heldTimeGreen == 0){
+    
+    r -= fadeSpeed;
+    g -= fadeSpeed;
+    b -= fadeSpeed;
+  }
+  
+  
   // If White Button Gets Pressed
+  if (buttonStateWhite == 1) {
+    heldTimeWhite++;}
+  else {
+    heldTimeWhite = 0;
+  }  
+  
+  if  (heldTimeWhite == 1 ){
+    Serial.println("tieFire");
+    r = 0;
+    g = 255;
+    b = 0;
+  }
+  else {
+    r = 0;
+    g -= 1;
+    b = 0;
+  }  
+  
+  
   
   // If Blue Button Gets Pressed
-
+  if (buttonStateBlue == 1) {
+    heldTimeBlue++;}
+  else {
+    heldTimeBlue = 0;
+  }  
+  
+  if  (heldTimeBlue == 1 ){
+    Serial.println("blaster");
+    r = 255;
+    g = 0;
+    b = 0;
+  }
+  else {
+    r -= 2;
+    g  = 0;
+    b  = 0;
+  }  
   
 
   
@@ -165,6 +236,13 @@ void loop(){
     
 
   // Serial.println(heldTimeRed);
+  
+  if (r <= 0){ r = 0;}
+  if (r >= 255){ r = 255;}
+  if (g <= 0){g = 0;}
+  if (g >= 255){ g = 255;}
+  if (b <= 0){b = 0;}
+  if (b >= 255){ b = 255;}
   
   lightUp(strip.Color(r, g, b));
 
