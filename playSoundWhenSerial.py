@@ -16,9 +16,23 @@ ser = serial.Serial('/dev/tty.usbmodem1421', 9600)
 while True:
     derp = ser.readline()
     derp2 = derp.decode('utf-8') 
-    if 'siren' in derp2:
-        print('make the sound')
+    if 'tie' in derp2:
+        print(derp2)
         
         pygame.mixer.init()
-        pygame.mixer.music.load("/Users/gholbrow/Downloads/70938__guitarguy1985__police2.wav")
-        pygame.mixer.music.play()                 
+        pygame.mixer.music.load("/Users/gholbrow/Downloads/TIE-Fire.wav")
+        pygame.mixer.music.play()   
+              
+    if 'Blaster' in derp2:
+        print(derp2)
+        
+        pygame.mixer.init()
+        pygame.mixer.music.load("/Users/gholbrow/Downloads/Blaster-Imperial.wav")
+        pygame.mixer.music.play()     
+        
+    if 'cop' in derp2:
+        print(derp2)
+        
+        pygame.mixer.init()
+        pygame.mixer.music.load("/Users/gholbrow/Downloads/414208__jacksonacademyashmore__airhorn.wav")
+        pygame.mixer.music.play()         
