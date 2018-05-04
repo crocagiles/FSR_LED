@@ -1,0 +1,1361 @@
+$(objects)/SDL.lo: ./SDL-1.2.14/src/SDL.c \
+	./SDL-1.2.14/include/SDL.h \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_cdrom.h \
+	./SDL-1.2.14/include/SDL_cpuinfo.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_loadso.h \
+	./SDL-1.2.14/include/SDL_main.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/SDL.c  -o $@
+
+
+$(objects)/SDL_error.lo: ./SDL-1.2.14/src/SDL_error.c \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/SDL_error_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/SDL_error.c  -o $@
+
+
+$(objects)/SDL_fatal.lo: ./SDL-1.2.14/src/SDL_fatal.c \
+	./SDL-1.2.14/include/SDL.h \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_cdrom.h \
+	./SDL-1.2.14/include/SDL_cpuinfo.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_loadso.h \
+	./SDL-1.2.14/include/SDL_main.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/SDL_fatal.c  -o $@
+
+
+$(objects)/SDL_audio.lo: ./SDL-1.2.14/src/audio/SDL_audio.c \
+	./SDL-1.2.14/include/SDL.h \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_cdrom.h \
+	./SDL-1.2.14/include/SDL_cpuinfo.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_loadso.h \
+	./SDL-1.2.14/include/SDL_main.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/audio/SDL_audio_c.h \
+	./SDL-1.2.14/src/audio/SDL_audiomem.h \
+	./SDL-1.2.14/src/audio/SDL_sysaudio.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/audio/SDL_audio.c  -o $@
+
+
+$(objects)/SDL_audiocvt.lo: ./SDL-1.2.14/src/audio/SDL_audiocvt.c \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/audio/SDL_audiocvt.c  -o $@
+
+
+$(objects)/SDL_audiodev.lo: ./SDL-1.2.14/src/audio/SDL_audiodev.c \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/audio/SDL_audiodev_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/audio/SDL_audiodev.c  -o $@
+
+
+$(objects)/SDL_mixer.lo: ./SDL-1.2.14/src/audio/SDL_mixer.c \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_cpuinfo.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/audio/SDL_mixer_MMX.h \
+	./SDL-1.2.14/src/audio/SDL_mixer_MMX_VC.h \
+	./SDL-1.2.14/src/audio/SDL_mixer_m68k.h \
+	./SDL-1.2.14/src/audio/SDL_sysaudio.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/audio/SDL_mixer.c  -o $@
+
+
+$(objects)/SDL_mixer_MMX.lo: ./SDL-1.2.14/src/audio/SDL_mixer_MMX.c \
+	./SDL-1.2.14/include/SDL_platform.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/audio/SDL_mixer_MMX.c  -o $@
+
+
+$(objects)/SDL_mixer_MMX_VC.lo: ./SDL-1.2.14/src/audio/SDL_mixer_MMX_VC.c \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/src/audio/SDL_mixer_MMX_VC.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/audio/SDL_mixer_MMX_VC.c  -o $@
+
+
+$(objects)/SDL_mixer_m68k.lo: ./SDL-1.2.14/src/audio/SDL_mixer_m68k.c \
+	./SDL-1.2.14/include/SDL_platform.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/audio/SDL_mixer_m68k.c  -o $@
+
+
+$(objects)/SDL_wave.lo: ./SDL-1.2.14/src/audio/SDL_wave.c \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/audio/SDL_wave.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/audio/SDL_wave.c  -o $@
+
+
+$(objects)/SDL_cdrom.lo: ./SDL-1.2.14/src/cdrom/SDL_cdrom.c \
+	./SDL-1.2.14/include/SDL_cdrom.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/cdrom/SDL_syscdrom.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/cdrom/SDL_cdrom.c  -o $@
+
+
+$(objects)/SDL_cpuinfo.lo: ./SDL-1.2.14/src/cpuinfo/SDL_cpuinfo.c \
+	./SDL-1.2.14/include/SDL.h \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_cdrom.h \
+	./SDL-1.2.14/include/SDL_cpuinfo.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_loadso.h \
+	./SDL-1.2.14/include/SDL_main.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/cpuinfo/SDL_cpuinfo.c  -o $@
+
+
+$(objects)/SDL_active.lo: ./SDL-1.2.14/src/events/SDL_active.c \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/events/SDL_active.c  -o $@
+
+
+$(objects)/SDL_events.lo: ./SDL-1.2.14/src/events/SDL_events.c \
+	./SDL-1.2.14/include/SDL.h \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_cdrom.h \
+	./SDL-1.2.14/include/SDL_cpuinfo.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_loadso.h \
+	./SDL-1.2.14/include/SDL_main.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/events/SDL_events.c  -o $@
+
+
+$(objects)/SDL_expose.lo: ./SDL-1.2.14/src/events/SDL_expose.c \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/events/SDL_expose.c  -o $@
+
+
+$(objects)/SDL_keyboard.lo: ./SDL-1.2.14/src/events/SDL_keyboard.c \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/events/SDL_keyboard.c  -o $@
+
+
+$(objects)/SDL_mouse.lo: ./SDL-1.2.14/src/events/SDL_mouse.c \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/events/../video/SDL_cursor_c.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/events/SDL_mouse.c  -o $@
+
+
+$(objects)/SDL_quit.lo: ./SDL-1.2.14/src/events/SDL_quit.c \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/events/SDL_quit.c  -o $@
+
+
+$(objects)/SDL_resize.lo: ./SDL-1.2.14/src/events/SDL_resize.c \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/events/SDL_resize.c  -o $@
+
+
+$(objects)/SDL_rwops.lo: ./SDL-1.2.14/src/file/SDL_rwops.c \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/file/SDL_rwops.c  -o $@
+
+
+$(objects)/SDL_getenv.lo: ./SDL-1.2.14/src/stdlib/SDL_getenv.c \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/stdlib/SDL_getenv.c  -o $@
+
+
+$(objects)/SDL_iconv.lo: ./SDL-1.2.14/src/stdlib/SDL_iconv.c \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/stdlib/SDL_iconv.c  -o $@
+
+
+$(objects)/SDL_malloc.lo: ./SDL-1.2.14/src/stdlib/SDL_malloc.c \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/stdlib/SDL_malloc.c  -o $@
+
+
+$(objects)/SDL_qsort.lo: ./SDL-1.2.14/src/stdlib/SDL_qsort.c \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/stdlib/SDL_qsort.c  -o $@
+
+
+$(objects)/SDL_stdlib.lo: ./SDL-1.2.14/src/stdlib/SDL_stdlib.c \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/stdlib/SDL_stdlib.c  -o $@
+
+
+$(objects)/SDL_string.lo: ./SDL-1.2.14/src/stdlib/SDL_string.c \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/stdlib/SDL_string.c  -o $@
+
+
+$(objects)/SDL_thread.lo: ./SDL-1.2.14/src/thread/SDL_thread.c \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/SDL_error_c.h \
+	./SDL-1.2.14/src/thread/SDL_systhread.h \
+	./SDL-1.2.14/src/thread/SDL_thread_c.h \
+	./SDL-1.2.14/src/thread/generic/SDL_systhread_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/thread/SDL_thread.c  -o $@
+
+
+$(objects)/SDL_timer.lo: ./SDL-1.2.14/src/timer/SDL_timer.c \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/timer/SDL_systimer.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/timer/SDL_timer.c  -o $@
+
+
+$(objects)/SDL_RLEaccel.lo: ./SDL-1.2.14/src/video/SDL_RLEaccel.c \
+	./SDL-1.2.14/include/SDL_cpuinfo.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/video/SDL_RLEaccel_c.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	./SDL-1.2.14/src/video/mmx.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_RLEaccel.c  -o $@
+
+
+$(objects)/SDL_blit.lo: ./SDL-1.2.14/src/video/SDL_blit.c \
+	./SDL-1.2.14/include/SDL_cpuinfo.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/video/SDL_RLEaccel_c.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	./SDL-1.2.14/src/video/SDL_pixels_c.h \
+	./SDL-1.2.14/src/video/mmx.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_blit.c  -o $@
+
+
+$(objects)/SDL_blit_0.lo: ./SDL-1.2.14/src/video/SDL_blit_0.c \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_blit_0.c  -o $@
+
+
+$(objects)/SDL_blit_1.lo: ./SDL-1.2.14/src/video/SDL_blit_1.c \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_blit_1.c  -o $@
+
+
+$(objects)/SDL_blit_A.lo: ./SDL-1.2.14/src/video/SDL_blit_A.c \
+	./SDL-1.2.14/include/SDL_cpuinfo.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	./SDL-1.2.14/src/video/mmx.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_blit_A.c  -o $@
+
+
+$(objects)/SDL_blit_N.lo: ./SDL-1.2.14/src/video/SDL_blit_N.c \
+	./SDL-1.2.14/include/SDL_cpuinfo.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/video/../hermes/../hermes/HeadX86.h \
+	./SDL-1.2.14/src/video/../hermes/HeadMMX.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_blit_N.c  -o $@
+
+
+$(objects)/SDL_bmp.lo: ./SDL-1.2.14/src/video/SDL_bmp.c \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_bmp.c  -o $@
+
+
+$(objects)/SDL_cursor.lo: ./SDL-1.2.14/src/video/SDL_cursor.c \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/events/../video/SDL_cursor_c.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	./SDL-1.2.14/src/video/SDL_pixels_c.h \
+	./SDL-1.2.14/src/video/default_cursor.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_cursor.c  -o $@
+
+
+$(objects)/SDL_gamma.lo: ./SDL-1.2.14/src/video/SDL_gamma.c \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_name.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/video/e_log.h \
+	./SDL-1.2.14/src/video/e_pow.h \
+	./SDL-1.2.14/src/video/e_sqrt.h \
+	./SDL-1.2.14/src/video/math_private.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_gamma.c  -o $@
+
+
+$(objects)/SDL_pixels.lo: ./SDL-1.2.14/src/video/SDL_pixels.c \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/video/SDL_RLEaccel_c.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	./SDL-1.2.14/src/video/SDL_pixels_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_pixels.c  -o $@
+
+
+$(objects)/SDL_stretch.lo: ./SDL-1.2.14/src/video/SDL_stretch.c \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_stretch.c  -o $@
+
+
+$(objects)/SDL_surface.lo: ./SDL-1.2.14/src/video/SDL_surface.c \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/events/../video/SDL_cursor_c.h \
+	./SDL-1.2.14/src/video/SDL_RLEaccel_c.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	./SDL-1.2.14/src/video/SDL_pixels_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_surface.c  -o $@
+
+
+$(objects)/SDL_video.lo: ./SDL-1.2.14/src/video/SDL_video.c \
+	./SDL-1.2.14/include/SDL.h \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_cdrom.h \
+	./SDL-1.2.14/include/SDL_cpuinfo.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_loadso.h \
+	./SDL-1.2.14/include/SDL_main.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/events/../video/SDL_cursor_c.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	./SDL-1.2.14/src/video/SDL_pixels_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_video.c  -o $@
+
+
+$(objects)/SDL_yuv.lo: ./SDL-1.2.14/src/video/SDL_yuv.c \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/video/SDL_yuv_sw_c.h \
+	./SDL-1.2.14/src/video/SDL_yuvfuncs.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_yuv.c  -o $@
+
+
+$(objects)/SDL_yuv_mmx.lo: ./SDL-1.2.14/src/video/SDL_yuv_mmx.c \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/video/mmx.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_yuv_mmx.c  -o $@
+
+
+$(objects)/SDL_yuv_sw.lo: ./SDL-1.2.14/src/video/SDL_yuv_sw.c \
+	./SDL-1.2.14/include/SDL_cpuinfo.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/video/SDL_stretch_c.h \
+	./SDL-1.2.14/src/video/SDL_yuv_sw_c.h \
+	./SDL-1.2.14/src/video/SDL_yuvfuncs.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/SDL_yuv_sw.c  -o $@
+
+
+$(objects)/SDL_joystick.lo: ./SDL-1.2.14/src/joystick/SDL_joystick.c \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	./SDL-1.2.14/src/joystick/SDL_sysjoystick.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/joystick/SDL_joystick.c  -o $@
+
+
+$(objects)/SDL_nullevents.lo: ./SDL-1.2.14/src/video/dummy/SDL_nullevents.c \
+	./SDL-1.2.14/include/SDL.h \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_cdrom.h \
+	./SDL-1.2.14/include/SDL_cpuinfo.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_loadso.h \
+	./SDL-1.2.14/include/SDL_main.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	./SDL-1.2.14/src/video/dummy/SDL_nullevents_c.h \
+	./SDL-1.2.14/src/video/dummy/SDL_nullvideo.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/dummy/SDL_nullevents.c  -o $@
+
+
+$(objects)/SDL_nullmouse.lo: ./SDL-1.2.14/src/video/dummy/SDL_nullmouse.c \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	./SDL-1.2.14/src/video/dummy/SDL_nullmouse_c.h \
+	./SDL-1.2.14/src/video/dummy/SDL_nullvideo.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/dummy/SDL_nullmouse.c  -o $@
+
+
+$(objects)/SDL_nullvideo.lo: ./SDL-1.2.14/src/video/dummy/SDL_nullvideo.c \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	./SDL-1.2.14/src/video/SDL_pixels_c.h \
+	./SDL-1.2.14/src/video/dummy/SDL_nullevents_c.h \
+	./SDL-1.2.14/src/video/dummy/SDL_nullmouse_c.h \
+	./SDL-1.2.14/src/video/dummy/SDL_nullvideo.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/dummy/SDL_nullvideo.c  -o $@
+
+
+$(objects)/SDL_diskaudio.lo: ./SDL-1.2.14/src/audio/disk/SDL_diskaudio.c \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/audio/SDL_audio_c.h \
+	./SDL-1.2.14/src/audio/SDL_audiodev_c.h \
+	./SDL-1.2.14/src/audio/SDL_audiomem.h \
+	./SDL-1.2.14/src/audio/SDL_sysaudio.h \
+	./SDL-1.2.14/src/audio/disk/SDL_diskaudio.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/audio/disk/SDL_diskaudio.c  -o $@
+
+
+$(objects)/SDL_dummyaudio.lo: ./SDL-1.2.14/src/audio/dummy/SDL_dummyaudio.c \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/audio/SDL_audio_c.h \
+	./SDL-1.2.14/src/audio/SDL_audiodev_c.h \
+	./SDL-1.2.14/src/audio/SDL_audiomem.h \
+	./SDL-1.2.14/src/audio/SDL_sysaudio.h \
+	./SDL-1.2.14/src/audio/dummy/SDL_dummyaudio.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/audio/dummy/SDL_dummyaudio.c  -o $@
+
+
+$(objects)/SDL_sysloadso.lo: ./SDL-1.2.14/src/loadso/dlopen/SDL_sysloadso.c \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_loadso.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/loadso/dlopen/SDL_sysloadso.c  -o $@
+
+
+$(objects)/SDL_dspaudio.lo: ./SDL-1.2.14/src/audio/dsp/SDL_dspaudio.c \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/audio/SDL_audio_c.h \
+	./SDL-1.2.14/src/audio/SDL_audiodev_c.h \
+	./SDL-1.2.14/src/audio/SDL_audiomem.h \
+	./SDL-1.2.14/src/audio/SDL_sysaudio.h \
+	./SDL-1.2.14/src/audio/dsp/SDL_dspaudio.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/audio/dsp/SDL_dspaudio.c  -o $@
+
+
+$(objects)/SDL_dmaaudio.lo: ./SDL-1.2.14/src/audio/dma/SDL_dmaaudio.c \
+	./SDL-1.2.14/include/SDL_audio.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/audio/SDL_audio_c.h \
+	./SDL-1.2.14/src/audio/SDL_audiodev_c.h \
+	./SDL-1.2.14/src/audio/SDL_sysaudio.h \
+	./SDL-1.2.14/src/audio/dma/SDL_dmaaudio.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/audio/dma/SDL_dmaaudio.c  -o $@
+
+
+$(objects)/SDL_fb3dfx.lo: ./SDL-1.2.14/src/video/fbcon/SDL_fb3dfx.c \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	./SDL-1.2.14/src/video/fbcon/3dfx_mmio.h \
+	./SDL-1.2.14/src/video/fbcon/3dfx_regs.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fb3dfx.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbvideo.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/fbcon/SDL_fb3dfx.c  -o $@
+
+
+$(objects)/SDL_fbelo.lo: ./SDL-1.2.14/src/video/fbcon/SDL_fbelo.c \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbelo.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbvideo.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/fbcon/SDL_fbelo.c  -o $@
+
+
+$(objects)/SDL_fbevents.lo: ./SDL-1.2.14/src/video/fbcon/SDL_fbevents.c \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbelo.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbevents_c.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbkeys.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbvideo.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/fbcon/SDL_fbevents.c  -o $@
+
+
+$(objects)/SDL_fbmatrox.lo: ./SDL-1.2.14/src/video/fbcon/SDL_fbmatrox.c \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbmatrox.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbvideo.h \
+	./SDL-1.2.14/src/video/fbcon/matrox_mmio.h \
+	./SDL-1.2.14/src/video/fbcon/matrox_regs.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/fbcon/SDL_fbmatrox.c  -o $@
+
+
+$(objects)/SDL_fbmouse.lo: ./SDL-1.2.14/src/video/fbcon/SDL_fbmouse.c \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbmouse_c.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbvideo.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/fbcon/SDL_fbmouse.c  -o $@
+
+
+$(objects)/SDL_fbriva.lo: ./SDL-1.2.14/src/video/fbcon/SDL_fbriva.c \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbriva.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbvideo.h \
+	./SDL-1.2.14/src/video/fbcon/riva_mmio.h \
+	./SDL-1.2.14/src/video/fbcon/riva_regs.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/fbcon/SDL_fbriva.c  -o $@
+
+
+$(objects)/SDL_fbvideo.lo: ./SDL-1.2.14/src/video/fbcon/SDL_fbvideo.c \
+	./SDL-1.2.14/include/SDL_active.h \
+	./SDL-1.2.14/include/SDL_endian.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_events.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_keyboard.h \
+	./SDL-1.2.14/include/SDL_keysym.h \
+	./SDL-1.2.14/include/SDL_mouse.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_opengl.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_quit.h \
+	./SDL-1.2.14/include/SDL_rwops.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_syswm.h \
+	./SDL-1.2.14/include/SDL_version.h \
+	./SDL-1.2.14/include/SDL_video.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/events/../video/../video/SDL_sysvideo.h \
+	./SDL-1.2.14/src/events/SDL_events_c.h \
+	./SDL-1.2.14/src/video/SDL_blit.h \
+	./SDL-1.2.14/src/video/SDL_pixels_c.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fb3dfx.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbevents_c.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbmatrox.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbmouse_c.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbriva.h \
+	./SDL-1.2.14/src/video/fbcon/SDL_fbvideo.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/video/fbcon/SDL_fbvideo.c  -o $@
+
+
+$(objects)/SDL_systhread.lo: ./SDL-1.2.14/src/thread/pthread/SDL_systhread.c \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/SDL_error_c.h \
+	./SDL-1.2.14/src/thread/SDL_systhread.h \
+	./SDL-1.2.14/src/thread/SDL_thread_c.h \
+	./SDL-1.2.14/src/thread/generic/SDL_systhread_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/thread/pthread/SDL_systhread.c  -o $@
+
+
+$(objects)/SDL_syssem.lo: ./SDL-1.2.14/src/thread/pthread/SDL_syssem.c \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/thread/generic/SDL_systhread_c.h \
+	./SDL-1.2.14/src/thread/pthread/../generic/SDL_syssem.c \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/thread/pthread/SDL_syssem.c  -o $@
+
+
+$(objects)/SDL_sysmutex.lo: ./SDL-1.2.14/src/thread/pthread/SDL_sysmutex.c \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/thread/pthread/SDL_sysmutex.c  -o $@
+
+
+$(objects)/SDL_syscond.lo: ./SDL-1.2.14/src/thread/pthread/SDL_syscond.c \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/thread/pthread/SDL_sysmutex_c.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/thread/pthread/SDL_syscond.c  -o $@
+
+
+$(objects)/SDL_sysjoystick.lo: ./SDL-1.2.14/src/joystick/linux/SDL_sysjoystick.c \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_joystick.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/joystick/SDL_sysjoystick.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/joystick/linux/SDL_sysjoystick.c  -o $@
+
+
+$(objects)/SDL_syscdrom.lo: ./SDL-1.2.14/src/cdrom/linux/SDL_syscdrom.c \
+	./SDL-1.2.14/include/SDL_cdrom.h \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	./SDL-1.2.14/src/cdrom/SDL_syscdrom.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/cdrom/linux/SDL_syscdrom.c  -o $@
+
+
+$(objects)/SDL_systimer.lo: ./SDL-1.2.14/src/timer/unix/SDL_systimer.c \
+	./SDL-1.2.14/include/SDL_error.h \
+	./SDL-1.2.14/include/SDL_mutex.h \
+	./SDL-1.2.14/include/SDL_platform.h \
+	./SDL-1.2.14/include/SDL_stdinc.h \
+	./SDL-1.2.14/include/SDL_thread.h \
+	./SDL-1.2.14/include/SDL_timer.h \
+	./SDL-1.2.14/include/begin_code.h \
+	./SDL-1.2.14/include/close_code.h \
+	include/SDL_config.h \
+
+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/timer/unix/SDL_systimer.c  -o $@
+
+
+$(objects)/SDL_dummy_main.o: ./SDL-1.2.14/src/main/dummy/SDL_dummy_main.c
+	$(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c ./SDL-1.2.14/src/main/dummy/SDL_dummy_main.c -o $@
