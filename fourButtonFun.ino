@@ -149,7 +149,7 @@ void loop(){
   }
   
   if (heldTimeGreen == 1){
-    Serial.print("cop");
+    Serial.println("cop");
   }
   
   if (heldTimeGreen > 130 ){
@@ -189,7 +189,7 @@ void loop(){
     heldTimeWhite = 0;
   }  
   
-  if  (heldTimeWhite == 1 ){
+  if  (heldTimeWhite == 25 ){
     Serial.println("tieFire");
     r = 0;
     g = 255;
@@ -210,8 +210,8 @@ void loop(){
     heldTimeBlue = 0;
   }  
   
-  if  (heldTimeBlue == 1 ){
-    Serial.print("Blaster");
+  if  (heldTimeBlue == 25 ){
+    Serial.println("Blaster");
     r = 255;
     g = 0;
     b = 0;
