@@ -26,22 +26,22 @@ while True:
     derp = ser.readline()
     derp2 = derp.decode('utf-8')
     
-    if 'tie' in derp2:
+    if 'green' in derp2:
         print(derp2)
-        wave_obj = sa.WaveObject.from_wave_file("/home/pi/CODE/NeoPixelStuff/TIE-Fire.wav")
+        wave_obj = sa.WaveObject.from_wave_file("/home/pi/CODE/NeoPixelStuff/173000__keykrusher__bicycle-bell-2.wav")
         play_obj = wave_obj.play()
-        play_obj.wait_done()
+        #play_obj.wait_done()
               
-    if 'Blaster' in derp2:
+    if 'red' in derp2:
         print(derp2)
 
-        wave_obj = sa.WaveObject.from_wave_file("/home/pi/CODE/NeoPixelStuff/Blaster-Imperial.wav")
+        wave_obj = sa.WaveObject.from_wave_file("/home/pi/CODE/NeoPixelStuff/boat_horn.wav")
         play_obj = wave_obj.play()
-        play_obj.wait_done()        
+        #play_obj.wait_done()        
         
     if 'cop' in derp2:
         print(derp2)
-
+        play_obj.stop()
         wave_obj = sa.WaveObject.from_wave_file("/home/pi/CODE/NeoPixelStuff/414208__jacksonacademyashmore__airhorn.wav")
         play_obj = wave_obj.play()
-        play_obj.wait_done()         
+        #play_obj.wait_done()         
