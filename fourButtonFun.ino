@@ -22,10 +22,10 @@ int lastStateRed   = 0;
 int lastStateGreen = 0;
 int lastStateWhite = 0;
 int lastStateBlue = 0;
-// int buttonStateRed   = 0;
-// int buttonStateGreen = 0;
-// int buttonStateWhite = 0;
-// int buttonStateBlue  = 0;
+// int red_button_state   = 0;
+// int green_button_state = 0;
+// int blue_button_state = 0;
+// int white_button_state  = 0;
 
 //RGB stuff
 int baseR;
@@ -37,10 +37,10 @@ int blue = 0 ;
 int r;
 int g;
 int b;
-int heldTimeRed = 0;
-int heldTimeGreen = 0;
-int heldTimeWhite = 0;
-int heldTimeBlue = 0;
+int red_held_time = 0;
+int green_hold_time = 0;
+int blue_hold_time = 0;
+int white_hold_time = 0;
 int sinAmp    = 1;
 float period1 = 1;
 
@@ -86,10 +86,10 @@ void loop(){
 
   //Read button state (pressed or not pressed?)
 
-  int buttonStateRed   = digitalRead(buttonPinRed);
-  int buttonStateGreen = digitalRead(buttonPinGreen);
-  int buttonStateWhite = digitalRead(buttonPinWhite);
-  int buttonStateBlue  = digitalRead(buttonPinBlue);
+  int red_button_state   = digitalRead(buttonPinRed);
+  int green_button_state = digitalRead(buttonPinGreen);
+  int blue_button_state = digitalRead(buttonPinWhite);
+  int white_button_state  = digitalRead(buttonPinBlue);
   
   
   // Red Button
@@ -100,15 +100,15 @@ void loop(){
   int blue = baseColors[indy][2];
   
   
-  if (buttonStateRed == 0) {
-    heldTimeRed++;}
+  if (red_button_state == 0) {
+    red_held_time++;}
   else {
-    heldTimeRed = 0;
+    red_held_time = 0;
   }
 
   //When thresh is exceeded, light up  
-  if (heldTimeRed == 1 ){
-    Serial.println("sin");
+  if (red_held_time == 1 ){
+    Serial.println("red_button");
     baseR = red;
     baseG = green;
     baseB = blue;
@@ -116,10 +116,10 @@ void loop(){
     g = map(green, 0, 255, 0, baseG);
     b = map(blue,  0, 255, 0, baseB);
   }
-  if (heldTimeRed > 10 ){// && heldTime < 400){
-    r =  (baseR-20) + (sin(period1 *  heldTimeRed)*(sinAmp*baseR));
-    g =  (baseG-20) + (sin(period1 *  heldTimeRed)*(sinAmp*baseG));
-    b =  (baseB-20) + (sin(period1 *  heldTimeRed)*(sinAmp*baseB));
+  if (red_held_time > 10 ){// && heldTime < 400){
+    r =  (baseR-20) + (sin(period1 *  red_held_time)*(sinAmp*baseR));
+    g =  (baseG-20) + (sin(period1 *  red_held_time)*(sinAmp*baseG));
+    b =  (baseB-20) + (sin(period1 *  red_held_time)*(sinAmp*baseB));
   }
   
   // Serial.print(r);
@@ -134,59 +134,50 @@ void loop(){
   
   
   // If Green Button Gets Pressed
-  if (buttonStateGreen == 0) {
-    heldTimeGreen++;}
+  if (green_button_state == 0) {
+    green_hold_time++;}
   else {
-    heldTimeGreen = 0;
+    green_hold_time = 0;
   }
   
-  if (heldTimeGreen == 1){
-    Serial.println("cop");
+  if (green_hold_time == 1){
+    Serial.println("green_button");
+    baseR = red;
+    baseG = green;
+    baseB = blue;
+    r = map(red,   0, 255, 0, baseR);
+    g = map(green, 0, 255, 0, baseG);
+    b = map(blue,  0, 255, 0, baseB);
   }
-  
-  if (heldTimeGreen > 40 ){
-    heldTimeGreen = 2;
+  if (green_hold_time > 10 ){// && heldTime < 400){
+    r =  (baseR-20) + (sin(period1 *  green_hold_time)*(sinAmp*baseR));
+    g =  (baseG-20) + (sin(period1 *  green_hold_time)*(sinAmp*baseG));
+    b =  (baseB-20) + (sin(period1 *  green_hold_time)*(sinAmp*baseB));
   }
-  //Serial.println(r);
-  
-  //When thresh is exceeded, light up  
-  if (heldTimeGreen > 1){
-    r = map(255, 0, 255, 0, 255-sinAmp);
-    g = 0;
-    b = 0;
-    r =  r + (sin(period1 *  heldTimeGreen)*(sinAmp/2));
-  }
+ 
+  //Serial.println(green_hold_time);  
 
-  else if (heldTimeGreen > 1){
-    r =0 ;
-    g =0 ;
-    b = map(255,   0, 255, 0, 255-sinAmp);
-    b =  b + (sin(period1 *  heldTimeGreen)*(sinAmp/2));
-  }
-  
-  //Serial.println(heldTimeGreen);  
-
-  else if (heldTimeGreen == 0){
+  // else if (green_hold_time == 0){
     
-    r -= fadeSpeed;
-    g -= fadeSpeed;
-    b -= fadeSpeed;
-  }
+  //   r -= fadeSpeed;
+  //   g -= fadeSpeed;
+  //   b -= fadeSpeed;
+  // }
   
   
-  // If White Button Gets Pressed
-  if (buttonStateWhite == 0) {
-    heldTimeWhite++;}
+  if (blue_button_state == 0) {
+    blue_hold_time++;}
   else {
-    heldTimeWhite = 0;
+    blue_hold_time = 0;
   }  
   
-  if  (heldTimeWhite == 25 ){
-    Serial.println("green");
-    r = 0;
-    g = 255;
-    b = 0;
+  if  (blue_hold_time == 25 ){
+    Serial.println("blue_button");
+    r = baseR;
+    g = baseG;
+    b = baseB;
     lightUp(strip.Color(r, g, b));
+    return 0;
   }
   // else {
   //   r = 0;
@@ -195,41 +186,54 @@ void loop(){
   // }  
   
   
-  
-  // If white Button Gets Pressed
-  if (buttonStateBlue == 0) {
-    heldTimeBlue++;}
+    // If white Button Gets Pressed
+  if (white_button_state == 0) {
+    white_hold_time++;}
   else {
-    heldTimeBlue = 0;
-  }  
-  
-  if  (heldTimeBlue == 2 ){
-    Serial.println("red");
-    r = 255;
-    g = 0;
-    b = 0;
-    lightUp(strip.Color(r, g, b));
+    white_hold_time = 0;
   }
   
+  if (white_hold_time == 1){
+    Serial.println("white_button");
+    r = 255;
+    g = 45;
+    b = 0;
+  }
+  if (white_hold_time > 10 ){// && heldTime < 400){
+    r =  (r) + (sin(period1 *  white_hold_time)*(sinAmp*255));
+    g =  (g) + (sin(period1 *  white_hold_time)*(sinAmp*50));
+    b =  (b) + (sin(period1 *  white_hold_time)*(sinAmp));
+  }
+  
+  
+  
+  
+  
+  // // If white Button Gets Pressed
+  // if (white_button_state == 0) {
+  //   green_hold_time++;}
   // else {
-  //   r -= 2;
-  //   g  = 0;
-  //   b  = 0;
+  //   green_hold_time = 0;
   // }  
   
-  // lastStateRed   = buttonStateRed;
-  // lastStateGreen = buttonStateGreen;
-  // lastStateWhite = buttonStateWhite;
-  // lastStateBlue  = buttonStateBlue;
+  // if  (green_hold_time > 2 ){
+  //   //Serial.println("White Button");
+  //   r = 255;
+  //   g = 45;
+  //   b = 0;
+  //   lightUp(strip.Color(r, g, b));
+    
+  // }
   
+
   
-  if (heldTimeRed == 0 && heldTimeGreen == 0 && heldTimeBlue == 0 && heldTimeWhite == 0 ){
+  if (red_held_time == 0 && green_hold_time == 0 && green_hold_time == 0 && blue_hold_time == 0 ){
     r -= fadeSpeed;
     g -= fadeSpeed;
     b -= fadeSpeed;
   }    
 
-  // Serial.println(heldTimeRed);
+  // Serial.println(red_held_time);
   
   if (r <= 0){ r = 0;}
   if (r >= 255){ r = 255;}
@@ -247,14 +251,14 @@ void loop(){
   // Serial.print("\t");
   // Serial.print(b);
   // Serial.print("\t");
-  // Serial.print(heldTimeRed);
+  // Serial.print(red_held_time);
   // Serial.print("\t");  
   // Serial.print("\n");
   
 }
 
 void lightUp(uint32_t c) {
-  for(uint16_t i=0; i<strip.numPixels(); i++) {
+  for(uint16_t i=0; i<150; i++) {
       strip.setPixelColor(i, 0);
   }
   for(uint16_t i=0; i<strip.numPixels(); i++) {
@@ -262,3 +266,5 @@ void lightUp(uint32_t c) {
   }
   strip.show();
 }
+
+
