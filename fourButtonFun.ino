@@ -5,16 +5,16 @@
 
 
 //Constants
-const int buttonPinRed   = 3;     
-const int buttonPinGreen = 7;
+const int buttonPinRed   = 4;     
+const int buttonPinGreen = 5;
 const int buttonPinWhite = 6;
-const int buttonPinBlue  = 5;
+const int buttonPinBlue  = 7;
 
 const int fadeSpeed = 1;
 
 #include <Adafruit_NeoPixel.h>
-#define PIN 4
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(20, PIN, NEO_GRB + NEO_KHZ800);
+#define PIN 3
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(150, PIN, NEO_GRB + NEO_KHZ800);
 
 //Variables
 //int buttonState = 0;
@@ -42,7 +42,7 @@ int heldTimeGreen = 0;
 int heldTimeWhite = 0;
 int heldTimeBlue = 0;
 int sinAmp    = 1;
-float period1 = .1;
+float period1 = 1;
 
 uint8_t baseColors[][3] = {{232, 50, 255},   // purple
                         {250, 100, 20},   // yellow 
@@ -94,8 +94,6 @@ void loop(){
   
   // Red Button
   // For sin wave flashing
-  
-  
   int indy = random(chosenColor);
   int red = baseColors[indy][0];
   int green = baseColors[indy][1];
@@ -107,11 +105,10 @@ void loop(){
   else {
     heldTimeRed = 0;
   }
-  
-
 
   //When thresh is exceeded, light up  
   if (heldTimeRed == 1 ){
+    Serial.println("sin");
     baseR = red;
     baseG = green;
     baseB = blue;
@@ -119,12 +116,10 @@ void loop(){
     g = map(green, 0, 255, 0, baseG);
     b = map(blue,  0, 255, 0, baseB);
   }
-  if (heldTimeRed > 100 ){// && heldTime < 400){
+  if (heldTimeRed > 10 ){// && heldTime < 400){
     r =  (baseR-20) + (sin(period1 *  heldTimeRed)*(sinAmp*baseR));
     g =  (baseG-20) + (sin(period1 *  heldTimeRed)*(sinAmp*baseG));
     b =  (baseB-20) + (sin(period1 *  heldTimeRed)*(sinAmp*baseB));
-    
-
   }
   
   // Serial.print(r);
@@ -138,10 +133,7 @@ void loop(){
 
   
   
-  
-  
   // If Green Button Gets Pressed
-  
   if (buttonStateGreen == 0) {
     heldTimeGreen++;}
   else {
@@ -152,13 +144,13 @@ void loop(){
     Serial.println("cop");
   }
   
-  if (heldTimeGreen > 130 ){
+  if (heldTimeGreen > 40 ){
     heldTimeGreen = 2;
   }
   //Serial.println(r);
   
   //When thresh is exceeded, light up  
-  if (heldTimeGreen > 30 && heldTimeGreen  < 80 ){
+  if (heldTimeGreen > 1){
     r = map(255, 0, 255, 0, 255-sinAmp);
     g = 0;
     b = 0;
@@ -172,9 +164,9 @@ void loop(){
     b =  b + (sin(period1 *  heldTimeGreen)*(sinAmp/2));
   }
   
-    
+  //Serial.println(heldTimeGreen);  
 
-  if (heldTimeGreen == 0){
+  else if (heldTimeGreen == 0){
     
     r -= fadeSpeed;
     g -= fadeSpeed;
@@ -190,10 +182,11 @@ void loop(){
   }  
   
   if  (heldTimeWhite == 25 ){
-    Serial.println("tieFire");
+    Serial.println("green");
     r = 0;
     g = 255;
     b = 0;
+    lightUp(strip.Color(r, g, b));
   }
   // else {
   //   r = 0;
@@ -203,19 +196,21 @@ void loop(){
   
   
   
-  // If Blue Button Gets Pressed
+  // If white Button Gets Pressed
   if (buttonStateBlue == 0) {
     heldTimeBlue++;}
   else {
     heldTimeBlue = 0;
   }  
   
-  if  (heldTimeBlue == 25 ){
-    Serial.println("Blaster");
+  if  (heldTimeBlue == 2 ){
+    Serial.println("red");
     r = 255;
     g = 0;
     b = 0;
+    lightUp(strip.Color(r, g, b));
   }
+  
   // else {
   //   r -= 2;
   //   g  = 0;
